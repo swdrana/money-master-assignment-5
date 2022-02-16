@@ -1,7 +1,19 @@
-header h1{
-    color: #FF4F5A;
-    transition: .3s;
+/* header area style */
+header h1 {
+  color: #ff4f5a;
+  transition: 0.3s;
 }
-header h1:hover{
-    color: #BC343E;
+header h1:hover {
+  color: #bc343e;
+}
+/* input and button style  */
+input,
+button {
+  border: 2px solid #ff4f5a;
+  border-radius: 5px;
+}
+input:hover,
+button:hover {
+  background-color: #fff !important;
+  color: #ff4f5a !important;
 }
