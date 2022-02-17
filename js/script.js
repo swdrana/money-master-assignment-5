@@ -44,7 +44,7 @@ function display(where,amount){
 let income = foodCost = rentCost = clothCost = totalCost = balance = saving = 0;
 balance = income;
 
-//negative positive error
+//check negative positive and produce error
 function validationError(field,cost){
     if(cost>=0){
         field.setCustomValidity("");
@@ -128,6 +128,7 @@ btnSave.addEventListener('click', function(){
     if(remainingBalance>=0){
         display(displayRemaining, remainingBalance );
         displayRemaining.style.color = "black";
+        savingField.setCustomValidity('');
     }else{
         display(displayRemaining, `${remainingBalance} Error: Please lower the savings rate.` );
         displayRemaining.style.color = "#ff4f5a";
