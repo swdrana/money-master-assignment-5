@@ -29,19 +29,16 @@ function clearInput(){
 }
 clearInput();
 
-
 //text to number
 function stringToNumber(str){
     let num = parseFloat(str);
     return num;
 }
 
-
 //display
 function display(where,amount){
     where.innerHTML=amount
 }
-
 
 //Input Field value
 let income = foodCost = rentCost = clothCost = totalCost = balance = saving = 0;
@@ -136,4 +133,4 @@ btnSave.addEventListener('click', function(){
         displayRemaining.style.color = "#ff4f5a";
         savingField.setCustomValidity('Please lower the savings rate.');
     }
-})
+});
